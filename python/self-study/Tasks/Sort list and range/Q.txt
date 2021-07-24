@@ -1,0 +1,5 @@
+Create a list which consists of int numbers from 1 to 10 using range() function. Sort the numbers of the list in descending order and print the result.
+
+
+Expected
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]

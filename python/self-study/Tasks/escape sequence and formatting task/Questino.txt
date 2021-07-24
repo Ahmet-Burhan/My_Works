@@ -1,0 +1,12 @@
+Re-arrange the sentence using the escape sequences from the list using .format() and list indexing methods to get the following output.
+
+Desired output :
+I am 40 years old.
+    I have two children.
+        Data Science is my IT domain.
+
+sentence = "I am 40 years old. I have two children. Data Science is my IT domain."
+escapes = ["\n\t", ("\t", "\t\t"), ["\n", "\n\t\t"]]
+
+
+

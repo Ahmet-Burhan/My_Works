@@ -1,0 +1,6 @@
+Considering the following flowers and colors lists, write the program using .format() and list indexing methods that will print out the text below.
+
+text = "My two favorite flowers are tulip and rose, two favorite colors are blue and green."
+
+flowers = [["jasmine", ["lavender", "rose"], "tulip"]]
+colors = ["red", ("blue", ["yellow", "green"]), "pink"]

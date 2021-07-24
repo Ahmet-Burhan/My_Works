@@ -1,0 +1,17 @@
+github girdik
+aşağıdaki adrese girdik
+https://github.com/clarusway/clarusway-it-fundamentals-9-21
+yeşil üzerinde code yazan butonu tıklıyoruz
+kopyalama butonu tıklıyoruz
+masaüstünde bir klasör cw-repo adında oluşturun
+bunun içine git bash ile girin
+git clone kopyalanan_url
+tekrardan masaüstünüze girip my-repo adında klasör oluşturun
+bu klasöre de git bash ile girin
+kendi reponuzun url ini yukarıdakine benzer şekilde kopyalayın
+git clone kendi_url
+cw-itf.. klasörü içerisindeki klasör ve dosyaları kopyalayıp yeni clone ettiğiniz kendi repo klasörünüze yapıştırın(.git klasörü hariç)
+kendi repo klasörünüzde git bash ile girin
+git add .
+git commit -m "initial commit"
+git push

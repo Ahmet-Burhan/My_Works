@@ -1,0 +1,17 @@
+UZAKTAKİ REPOYU(PRIVATE) KENDİ GİTHUB IMIZA EKLEME
+1-) Öncelikle bilgisayarınızda uygun bir yere klasör oluşturun. O klasöre uzaktaki repoyu clone edeceğiz.
+2-)klasörün içinde iken git bash çalıştırıp
+git clone <uzak repo linki> komutunu çalıştırın.
+dosyalar klasörünüze inmiş olacak.
+Bu adımda yüklemek istediğimiz repoyu bilgisayara indirdik.
+3-) Kendi Github hesabınızda yeni bir repo create edin. oluşan reponun url sini kopyalayın.
+4-) git clone <uzak repo linki> komutunu çalıştırın.
+dosyalar klasörünüze inmiş olacak.
+Bu adımda boş yeni yarattığımız repoyu bilgisayara indirdik.
+5-) 2 numaralı adımda oluşan dolu klasörün içindeki dosyaları .git hariç kopyalayıp 4. adımda oluşturduğumuz kendi klaörümüze kopyalayın. Dikkat!! .git kopyalanmamalı.
+6-) yapıştırdığımız yani kendi klasörümüzde dosyaları göndermeden önce add ve commit adımlarını yapmamız gerekiyor.
+git add .
+git commit -m "mesaj"
+7-) dosya push edilmeye hazır.
+git push
+8-) sayfayı yeninediğinizde reponun dolduğunu görebilirsiniz.

@@ -1,0 +1,2 @@
+Select and print the vegetables from the following list using indexing and slicing methods. Note that, except from the given list (grocer), your program must consist of a single line of code.
+grocer = ["banana", ["orange", ["apple", "eggplant", "melon", "spinach", "cheese", "leek" ], "water"], "mandarin"]
