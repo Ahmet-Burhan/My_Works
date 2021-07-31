@@ -27,7 +27,9 @@ print(odds)
 
 
 
-
+iterable = [1, 2, 3, 4]
+for i in iterable:
+    print(i**2)
 
 
 
