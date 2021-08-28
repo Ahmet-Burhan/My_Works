@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}   
+
+body{
+    font-family: "Audiowide";
+    
+}
+
+#header{
+    background-color: black;
+    color: white;   
+    border-bottom: 5px solid red;
+}
+
+#header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+span{
+    color: red;
+}
+
+#navigation ul{
+    display: flex;
+}
+
+li{
+    padding: 0 20px;
+    list-style: none;
+}

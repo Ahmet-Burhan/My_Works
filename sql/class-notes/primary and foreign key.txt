@@ -1,0 +1,26 @@
+CREATE TABLE customers3 (
+             Customer_Id INT PRIMARY KEY,
+			 First_Name varchar(25),
+			 Last_Name TEXT);
+			 
+CREATE TABLE orders (
+             order_id INT,
+			 order_number INT,
+			 Customer_Id INT,
+			 PRIMARY KEY(order_id),
+			 FOREIGN KEY(Customer_Id) 
+			             REFERENCES customers3(Customer_Id));
+
+CREATE TABLE vacation_plan(
+             place_id INT PRIMARY KEY,
+			 country TEXT,
+			 hotel_name VARCHAR(20) NOT NULL,
+			 EmployeeId INT,
+			 vacation_leght INT,
+			 budget INT,
+			 FOREIGN KEY(EmployeeId)
+			             REFERENCES employees(EmployeeId)); 
+
+			 
+		     
+

@@ -1,0 +1,10 @@
+ALTER TABLE vacation_plan
+ADD City TEXT
+
+
+ALTER TABLE vacation_plan(table_name)
+DROP vacation_leght(column_name)
+
+
+ALTER TABLE vacation_plan
+MODIFY budget DOUBLE;(modify sql lite da yok)
