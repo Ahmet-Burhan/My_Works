@@ -1,0 +1,46 @@
+1)iki cesit error var. Syntax error ve exception errors
+2)exception error -value , type , .... (try except (bunlari yola getirmek icin))
+3)try da deniyor , exception yukselirse excepti atliyor ve finally i calistiriyor. Her halukarda
+finally calisiyor. Exception error olmazsa else ve en son finally calisir.
+4)exception handling -> py dosyasinda misal ikinci input a sayi yerine k girersek value error verir.
+Peki k yi nasil kapsariz
+no_one ve two yu try in icine almak lazim.
+5)hangi satirda hata cikmasini ongoruyorsaniz try blokunun altina almaniz lazim.  ~~~onemli~~~
+
+6)exception as ~>   hangi hatayi verdigini biz python a soruyoruz.
+as balbal ~ balbal in type i str.
+~~ except Exception as firfirik ~~
+
+7)birden fazla exception kapsama: birden fazla except yazabilirsiniz. Ayni elif gibi . En son else ile digerleri diyoruz.
+8)
+try:
+    x = 4/1
+except:
+    print("error")
+else:
+    print("fine") 
+finally:
+    f.close()
+
+9)try:
+    x = 2/0
+except ZeroDivisionError:
+    print('Attempt to divide by zero')
+except:
+    print('Something else went wrong')  ~~~~~~~~~~~~KIsaca birden fazla except kullanabiliyoruz. ~~except ZeroDivisionError , except ValueError...
+
+
+10) ayni except hatalarini virgul ile atayabiliriz
+except (ValueError, TypeError):
+     print("Hata")
+
+11)FArkli FArkli bir suru error var. Internetten bakip yazabilirsiniz. Hepsi farkli farkli errorlari kapsiyor.
+built in exception diye internet de aratirsan python nin kendi sitesinden ulasabilirsin...####
+
+
+
+
+
+
+
+

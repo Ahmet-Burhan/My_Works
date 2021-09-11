@@ -1,0 +1,25 @@
+#When loading a module you can also use an abbreviated nickname for modules by using a keyword as.
+
+### ###
+
+#Importing a function or variable defined in a module is a very common and useful method.
+ We use the keyword "from" to use this option.
+
+### ###
+
+# from   my_module    import my_function   as mert
+
+
+### ###
+
+#import array           # importing using the original module name
+ import array as arr    # importing using an alias name
+ from array import *    # imports everything present in the array module 
+
+### ###
+import math
+print(dir(math))   # you can find out all names defined in this module
+
+### ###
+
+

@@ -1,0 +1,118 @@
+                               Reading Files
+bu alanda shuttle module ve os modulu vardır
+~ import os
+~ import shutil
+
+~~~~~~~~~~~  dosya = os.listdir()
+
+
+open() Function ~~~ ("file_name and path")
+~~~unicode hatalarinda (misal ğüçö falan girilip tanımaz ise encoding yapmak lazım) https://home.unicode.org
+bu siteden open a koyacağız.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unicode (Evrensel Kod) Unicode Consortium organizasyonu tarafından geliştirilen ve her karaktere bir sayı değeri karşılığı atayan bir endüstri standardıdır. Sistemin amacı farklı karakter kodlama sistemlerinin birbiriyle tutarlı çalışmasını ve dünyadaki tüm yazım sistemlerinden metinlerin bilgisayar ortamında tek bir standart altında temsil edilebilmesini sağlamaktır.
+WikipediaWikipedia
+Unicode Consortium
+Unicode Consortium (Türkçeleştirilmiş: Evrensel Kod Konsorsiyumu), kâr amacı gütmeyen bir kuruluş olup, Evrensel Kod standardının geliştirilmesi, genişletilmesi, kullanımını yaygınlaştırılmasını ve yazının modern yazılım ortamında sunulmasını amaçlamaktadır. Konsorsiyumdaki üyeler, bilişim şirketlerinin de dahil olduğu geniş bir kitleyi temsil etmektedir. Konsorsiyumun bütçesi, üyelerin finansal destekleri ile oluşturulmaktadır. Evrensel Kod Konsorsiyumuna üyelik dünyanın her yerinde Evrensel Kod standardını destekleyen, gelişmesinde ve uygulanmasında çalışmak isteyen her birey ve kuruma açıktır.
+WikipediaWikipedia
+Teknik standart
+Teknik standart, belirli bir norm ya da gerekliliği belirtmek amacıyla kullanılan terim. Genellikle bir mühendislik dalına ilişkin teknik ölçüt, yöntem, işlem ve uygulamaları içermektedir. Buna karşın, kullanım alanı zaman içinde genişlemiş kural, ürün ya da şirket standartlarına de facto standart adı verilmektedir.
+WikipediaWikipedia
+Karakter kodlaması
+Bilişimde karakter kodlaması kavramı bir çeşit kodlama sistemi kullanılarak kodlanmış karakter gruplarını temsil etmektedir. Soyutlama düzeyi ve kullanıldığı bağlama bağlı olarak karakterlere karşılık gelen kod noktaları ve bunların oluşturdukları kod alanı, bit örüntüleri, oktetler, doğal sayılar, elektrik sinyalleri vb. şeklinde algılanabilir. Metinsel verilerin işlenmesi, depolanması ve iletimi esnasında karakter kodlamaları kullanılır. Karakter seti, karakter eşlem veya kod sayfası gibi ifadeler karakter kodlaması kavramıyla eş anlamlıymış gibi kullanılsa da aralarında bazı anlam farkları bulunmaktadır.
+Optik ve elektronik telgrafla ilişkili eski karakter kodları yazılı dilde kullanılan k… Show more
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+https://www.youtube.com/watch?v=e8Syou92H8U
+
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Joseph hocanin video su
+
+https://www.youtube.com/watch?v=INBJafbkilg&feature=emb_imp_woyt
+
+~~~~~~~~~~~~
+
+open("firstfile.txt", encoding="utf-8")  (genelde utf 8 kullanilir.)
+
+open icinde bir surr method vardır
+misal mod.
+"r" "a" "w"  en cok kullanilanlardir.
+...
+
+file open()
+....
+body
+....
+file close()
+
+~~~~~~~~~~~~~
+file = open("dosya.txt", r)
+print(file.read(33))   ~33 karakter okur...  
+file.close()
+~~~~~~~~~~~
+file = open("dosya.txt", r)
+content= file.read()  
+file.close()
+
+print(content)  ###content[:33]  veya diger slicing methodlar kullanilabilir
+
+~~~~~~~~~~~~~~~~
+file = open("dosya.txt", r)
+print(file.read(33))
+print(file.read(35))   #geri kalan yerden devam eder #### bilgisayar cursor i kaldigi yerden devam eder mantiginda
+
+file.close()
+
+
+~~~~~~~~~~~~~~~~~~  seek method u
+print(file.read(33))
+file.seek(0)   # cursor i 0 a ceker  
+print(file.read(33))   ###  boylece ayni yeri iki kere yazar
+
+~~~~~~~~~~~~~~~~~~~# tell method u 
+print(file.read(33))
+print(file.tell()) ######en son cursor nerede kaldi onu verir  (yani 34)
+
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+READING THE FILES WITH  .readline() Method
+new line ile ayrilmis her bir karakteri okumanizi saglar (/n)
+print(sea.readline())   # her birinden bir satir okur.
+print(sea.readline())
+print(sea.readline())
+
+#tek bir satiri okuma icin tum satiri okumali.(orca is kind a Dolphin.(/n))
+readline(13)
+readline(13)
+readline(13)   #27 karakter oldugundan , ilk ikisinde 26 yazar. Oysaki 27 karakter var oyuzden ucuncu bir read line lazim.(satirin sonundaki
+enter i karakter olarak kabul eder.)
+
+(((((((((((((((((((((((((REDLINE    KENDISI ENTER.....)))))))))))))))))))))))))
+
+
+
+degiskenlere atarsak:
+sea = open("fishes.txt" , r)
+
+part_1 = sea.readline(13)
+part_2= sea.readline(13)
+part_3= sea.readline(13)
+part_4= sea.readline(13)
+
+sea.close()
+
+
+misal part_3 ~> "/n" new line verir.
+
+part_1 + part_2 + part_3 = firstline ...
+
+
+readline(100000000000)   satir uzunlugundan kucuk olmamak sartiyla buyuk tum rakamlari okur.
+eger az yazarsak o kadar okur......
+

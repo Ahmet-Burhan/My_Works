@@ -1,0 +1,20 @@
+Bu kerata olmasa ben bitmiş durumdayım dedi hoca
+
+satır satır okuyor ve liste içerisinde okuyor.
+
+with open("fishes.txt", "r") as file :
+    fish = file.readlines()
+    print(fish)
+
+fishes i gormuyor. Suan bilmiyorum neden
+
+yukaridakini donguye sokarsak
+
+    for line in fish :
+    print(line)
+
+sea.readlines()  # cursor kladigi yerden okumaya devam eder.
+
+##readlines liste icinde yazilir...
+
+

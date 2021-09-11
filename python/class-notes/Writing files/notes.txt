@@ -1,0 +1,51 @@
+.write() method
+with open("asd.txt", "w")
+w oncekini siliyor yenisi ekliyor
+
+hepsini ayri ayri satirlarda yazdirmis olsaniz bile birbirine concarnate olur yani yapisir.
+/n new line yazmak lazim.
+
+
+~~~fruits in icinde kileri yukaridan asagi yazar
+
+with open("fruits.txt", "w", encoding = "utf-8") as file :
+     for basket in fruits :
+         file.write(basket + "/n")  
+with open("fruits.txt") as file:
+    print(file.read())
+
+with open("fruits.txt") as file:
+    fruits2 = file.readlines()  ~~~liste olarak okuma.
+    
+
+~~~~  ~~~~~ ~~~~~~ 
+
+.write () methodu hangi tip veri alir icine?
+str alir .....
+
+/t
+/n
+
+
+~~~~~~~~~~~~~~~
+
+.readlines() ve .writelines() in arasinda nasil bir baglati vardir? iliski?
+
+her ikiside satirlar uzeirinden islem yapar . yani write line ile islem yaparken liste ye ihtiyacimiz vardir
+
+with open("fruits2","w",encoding="utf-8") as ff:
+   print(ff.read())
+
+
+writelines in icine yolladik.
+
+~~~~~~~~~~~~~~~~~~~
+Appending file with a
+
+with open("fruits2","a",encoding="utf-8") as ff:
+   ff.writelines(fruits2)
+
+geri kalani silmez tam tersi ekler....
+ama cursor kaldigi yerden devam eder
+bu yuzden misal uzerine yazacaginiz seyin son verisinin sonunda kalan cursordan baslayarak yazar
+boyle olunca ilk satir bitisik olur.
