@@ -1,0 +1,15 @@
+column1,column2,column3
+
+virgulleri birer cizgi olarak gorebiliriz
+altina veriler giriliyor
+excel de sql de ki tablolar gibi.
+
+
+csv modul
+
+import csv
+
+csv.reader()   for ile butun satirlari okutabiliyoruz.
+
+for row in csv_rows:
+    print(row)     gibi  ....
